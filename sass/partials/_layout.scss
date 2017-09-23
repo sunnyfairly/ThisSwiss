@@ -1,1 +1,53 @@
-/*Collection of all partials*/
+/*Collection of all partials, and structural css*/
+@import "partials/borders";
+@import "partials/backgrounds";
+@import "variables/mainVar";
+
+body {
+	width: 75%;
+	margin: auto;
+}
+
+header {
+	width: 100%;
+	height: 10em;
+}
+
+/*Logo and Main Nav Buttons*/
+.navbarHolder {
+	width: 100%;
+	height: 5em;
+}
+
+.navbar {
+	@include navBar;
+	width: 45em;
+	position: relative;
+	float: right;
+	top: 20;
+	li { 
+		display: inline-block;
+		margin-left: .35em;
+		padding-left: 1em;
+		&:hover {
+			color: $SwissRed;
+		}
+	}
+}
+
+#logo {
+	float: left;
+}
+
+#mainNavBar a {
+	@include mainNavButton;
+	display: inline-block;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+#login {
+	display: block;
+	float: right;
+	padding-right: 0;
+}

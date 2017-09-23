@@ -5,5 +5,14 @@
 
 
 
-
 /*Specific/Unique backgrounds*/
+@mixin swissLogo {
+	width: 11.5em;
+	height: 2.5em;
+	display: block;
+	background-image: url("images/swissLogo.png"); 
+	background-position: center;
+	background-size: cover;
+}
+
+

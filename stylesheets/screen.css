@@ -66,3 +66,112 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/*Collection of all variable lists*/
+/*Lists all color variables by relationship to the page*/
+/*Universal Colors*/
+/*Font Colors*/
+/*Specific/Unique Colors*/
+/*Footer Colors*/
+/*Lists all font-families by relationship to the page*/
+/*Universal Fonts*/
+/*Specific/Unique Fonts*/
+/*Navbar Font*/
+/* line 24, ../sass/variables/_fonts.scss */
+#login {
+  font-family: "CH-Sans-Regular","CH-Sans",Arial,sans-serif;
+  font-weight: 300em;
+  text-decoration: none;
+  color: #333333;
+}
+
+/*Collection of all partials, and structural css*/
+/*Defines borders by relationship to the page*/
+/*Universal Borders*/
+/*Specific Borders*/
+/*Describes backgrounds*/
+/*Universal Backgrounds*/
+/*Specific/Unique backgrounds*/
+/* line 6, ../sass/partials/_layout.scss */
+body {
+  width: 75%;
+  margin: auto;
+}
+
+/* line 11, ../sass/partials/_layout.scss */
+header {
+  width: 100%;
+  height: 10em;
+}
+
+/*Logo and Main Nav Buttons*/
+/* line 17, ../sass/partials/_layout.scss */
+.navbarHolder {
+  width: 100%;
+  height: 5em;
+}
+
+/* line 22, ../sass/partials/_layout.scss */
+.navbar {
+  font-size: .75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333333;
+  width: 45em;
+  position: relative;
+  float: right;
+  top: 20;
+}
+/* line 28, ../sass/partials/_layout.scss */
+.navbar li {
+  display: inline-block;
+  margin-left: .35em;
+  padding-left: 1em;
+}
+/* line 32, ../sass/partials/_layout.scss */
+.navbar li:hover {
+  color: #be1902;
+}
+
+/* line 38, ../sass/partials/_layout.scss */
+#logo {
+  float: left;
+}
+
+/* line 42, ../sass/partials/_layout.scss */
+#mainNavBar a {
+  font-family: "CH-Sans-Regular","CH-Sans",Arial,sans-serif;
+  font-weight: 300em;
+  text-decoration: none;
+  color: #333333;
+  display: inline-block;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/* line 49, ../sass/partials/_layout.scss */
+#login {
+  display: block;
+  float: right;
+  padding-right: 0;
+}
+
+/* line 10, ../sass/screen.scss */
+html {
+  font-size: 14px;
+}
+
+/* line 13, ../sass/screen.scss */
+body {
+  font: Arial, Helvetica, sans-serif;
+}
+
+/* line 17, ../sass/screen.scss */
+#logo {
+  width: 11.5em;
+  height: 2.5em;
+  display: block;
+  background-image: url("images/swissLogo.png");
+  background-position: center;
+  background-size: cover;
+}
