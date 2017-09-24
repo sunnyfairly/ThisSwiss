@@ -1,0 +1,35 @@
+/*Font setups organized by mixins*/
+@import "variables/mainVar";
+
+
+
+/*Universal Fonts*/
+@mixin bodyFont {
+	font-family: $mainBodyFont;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+/*Navbar Fonts*/
+@mixin navBar {
+	font-size: .75em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $DarkGrey;
+}
+
+@mixin mainNavButtonFont {
+	font-family: $navBarFont;
+	font-weight: 300em;
+	font-size: 1.85714em;
+	text-decoration: none;
+	color: $DarkGrey;
+	vertical-align: top;
+	&:hover {
+		color:$SwissRed;
+	}
+}
+
+
+#login {
+	@include mainNavButtonFont;
+}

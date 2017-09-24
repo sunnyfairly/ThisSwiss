@@ -1,26 +1,12 @@
 /*Lists all font-families by relationship to the page*/
 /*Universal Fonts*/
-$mainBody:	Arial, Helvetica, sans-serif;
+$mainBodyFont:	Arial, Helvetica, sans-serif;
 
 
 /*Specific/Unique Fonts*/
-/*Navbar Font*/
-
-@mixin navBar {
-	font-size: .75em;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: $DarkGrey;
-}
+$navBarFont: "CH-Sans-Regular", "CH-Sans", Arial, sans-serif;
 
 
-@mixin mainNavButton {
-	font-family: "CH-Sans-Regular","CH-Sans",Arial,sans-serif;
-	font-weight: 300em;
-	text-decoration: none;
-	color: $DarkGrey;
-}
 
-#login {
-	@include mainNavButton;
-}
+
+

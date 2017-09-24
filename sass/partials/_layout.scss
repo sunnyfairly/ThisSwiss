@@ -1,16 +1,26 @@
 /*Collection of all partials, and structural css*/
 @import "partials/borders";
 @import "partials/backgrounds";
+@import "partials/font-mixins";
 @import "variables/mainVar";
 
-body {
-	width: 75%;
-	margin: auto;
+html {
+	font-size: 14px;
 }
 
-header {
-	width: 100%;
-	height: 10em;
+body {
+	width: 67.14286rem;
+	margin: 0 auto;
+	@include bodyFont;
+}
+
+
+.site-header {
+	position: relative;
+	display: block;
+	height: 138px;
+	margin: 0 auto;
+
 }
 
 /*Logo and Main Nav Buttons*/
@@ -24,26 +34,43 @@ header {
 	width: 45em;
 	position: relative;
 	float: right;
-	top: 20;
+	top: 15;
+	:first-child {
+		margin-left: 2em;
+	}
 	li { 
+		color: $navBarColor;
 		display: inline-block;
 		margin-left: .35em;
 		padding-left: 1em;
 		&:hover {
 			color: $SwissRed;
 		}
+		&::after {
+			position: absolute;
+			background-image: url("images/global_sprite.png");	
+			background-position: -91px -376px;
+			width: 7px;
+			height: 7px;
+		}	
 	}
 }
 
 #logo {
+	position: absolute;
+	left: 0;
+	bottom: 35px;
+}
+#mainNavBar {
 	float: left;
+	padding-left: 215px;
 }
 
 #mainNavBar a {
-	@include mainNavButton;
+	@include mainNavButtonFont;
 	display: inline-block;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 #login {
