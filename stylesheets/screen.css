@@ -67,7 +67,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*Collection of all variable lists*/
+/*Main Variable list
+Collection of all variable lists
+*/
 /*Lists all color variables by relationship to the page*/
 /*Universal Colors*/
 /*Font Colors*/
@@ -127,49 +129,91 @@ body {
 .navbarHolder {
   width: 100%;
   height: 5em;
+  position: relative;
 }
 
-/* line 32, ../sass/partials/_layout.scss */
+/* line 33, ../sass/partials/_layout.scss */
+.navbarHolder ul {
+  width: 550px;
+  margin-left: 650px;
+}
+
+/* line 38, ../sass/partials/_layout.scss */
 .navbar {
   font-size: .75em;
   text-transform: uppercase;
   font-weight: bold;
   color: #333333;
-  width: 45em;
+  width: 100%;
   position: relative;
   float: right;
   top: 15;
 }
-/* line 38, ../sass/partials/_layout.scss */
-.navbar :first-child {
-  margin-left: 2em;
-}
-/* line 41, ../sass/partials/_layout.scss */
+/* line 44, ../sass/partials/_layout.scss */
 .navbar li {
+  text-align: top;
+  line-height: 1.5em;
   color: #7C736C;
   display: inline-block;
   margin-left: .35em;
   padding-left: 1em;
 }
-/* line 46, ../sass/partials/_layout.scss */
-.navbar li:hover {
+/* line 51, ../sass/partials/_layout.scss */
+.navbar li a {
+  margin-left: 15px;
+  margin-right: 10px;
+  color: #7C736C;
+  position: relative;
+}
+/* line 56, ../sass/partials/_layout.scss */
+.navbar li a:hover {
   color: #be1902;
 }
+/* line 62, ../sass/partials/_layout.scss */
+.navbar .withArrow::after {
+  content: "";
+  position: absolute;
+  background-image: url("images/sprites.png");
+  background-position: -89px -374px;
+  width: 10px;
+  height: 10px;
+}
+/* line 70, ../sass/partials/_layout.scss */
+.navbar :first-child {
+  margin-left: 2em;
+  text-decoration: none;
+}
+/* line 74, ../sass/partials/_layout.scss */
+.navbar #search::after {
+  content: "";
+  position: absolute;
+  background-image: url("images/sprites.png");
+  background-position: -386px -690px;
+  width: 15px;
+  height: 15px;
+}
 
-/* line 52, ../sass/partials/_layout.scss */
+/* line 84, ../sass/partials/_layout.scss */
 #logo {
   position: absolute;
   left: 0;
   bottom: 35px;
+  width: 160px;
+  height: 37px;
+  display: block;
+  background-image: url("images/logo-swiss.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 160px 37px;
 }
 
-/* line 57, ../sass/partials/_layout.scss */
+/* line 91, ../sass/partials/_layout.scss */
 #mainNavBar {
   float: left;
   padding-left: 215px;
 }
 
-/* line 62, ../sass/partials/_layout.scss */
+/* line 96, ../sass/partials/_layout.scss */
 #mainNavBar a {
   font-family: "CH-Sans-Regular", "CH-Sans", Arial, sans-serif;
   font-weight: 300em;
@@ -186,25 +230,19 @@ body {
   color: #be1902;
 }
 
-/* line 69, ../sass/partials/_layout.scss */
+/* line 103, ../sass/partials/_layout.scss */
 #login {
   display: block;
   float: right;
   padding-right: 0;
+  font-family: "CH-Sans-Regular", "CH-Sans", Arial, sans-serif;
+  font-weight: 300em;
+  font-size: 1.85714em;
+  text-decoration: none;
+  color: #333333;
+  vertical-align: top;
 }
-
-/* line 10, ../sass/screen.scss */
-html {
-  font-size: 14px;
-}
-
-/* line 15, ../sass/screen.scss */
-#logo {
-  width: 160px;
-  height: 37px;
-  display: block;
-  background-image: url("images/swissLogo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* line 27, ../sass/partials/_font-mixins.scss */
+#login:hover {
+  color: #be1902;
 }

@@ -27,40 +27,67 @@ body {
 .navbarHolder {
 	width: 100%;
 	height: 5em;
+	position: relative;
+}
+
+.navbarHolder ul {
+	width: 550px;
+	margin-left: 650px;
 }
 
 .navbar {
 	@include navBar;
-	width: 45em;
+	width: 100%;
 	position: relative;
 	float: right;
 	top: 15;
-	:first-child {
-		margin-left: 2em;
-	}
 	li { 
+		text-align: top;
+		line-height: 1.5em;
 		color: $navBarColor;
 		display: inline-block;
 		margin-left: .35em;
 		padding-left: 1em;
-		&:hover {
+		a {
+			margin-left: 15px;
+			margin-right: 10px;
+			color: $navBarColor;
+			position: relative;
+			&:hover {
 			color: $SwissRed;
+			}
+				
 		}
-		&::after {
-			position: absolute;
-			background-image: url("images/global_sprite.png");	
-			background-position: -91px -376px;
-			width: 7px;
-			height: 7px;
-		}	
 	}
+	.withArrow::after {	
+			content: "";
+			position: absolute;
+			background-image: url("images/sprites.png");	
+			background-position: -89px -374px;
+			width: 10px;
+			height: 10px;
+			}
+	:first-child {
+		margin-left: 2em;
+		text-decoration: none;
+	}
+	#search::after {	
+			content: "";
+			position: absolute;
+			background-image: url("images/sprites.png");	
+			background-position: -386px -690px;
+			width: 15px;
+			height: 15px;
+			}
 }
 
 #logo {
 	position: absolute;
 	left: 0;
 	bottom: 35px;
+	@include swissLogo;
 }
+
 #mainNavBar {
 	float: left;
 	padding-left: 215px;
@@ -77,4 +104,5 @@ body {
 	display: block;
 	float: right;
 	padding-right: 0;
+	@include mainNavButtonFont;
 }
