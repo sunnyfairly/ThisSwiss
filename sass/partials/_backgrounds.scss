@@ -13,4 +13,24 @@
 	background-size: 160px 37px;
 }
 
+@mixin navLinksBG {
+	background-color: $DarkGrey;
+	
+}
+
+
+
+
+
+/*Couple chillin*/
+@mixin backgroundCouple {
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	bottom: 0;
+	background-image: url("images/coupleChillin.jpg");
+	transform: translate(0px, 110px);
+}
+
+
 

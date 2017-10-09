@@ -7,3 +7,10 @@
 
 
 /*Specific Borders*/
+@mixin navTabsBorder {
+	border: solid #e1dfda;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+}
