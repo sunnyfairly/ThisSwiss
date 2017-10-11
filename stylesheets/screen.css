@@ -140,7 +140,7 @@ html {
   color: #333333;
   position: absolute;
   top: 15;
-  right: 0;
+  right: -7%;
   width: 60%;
 }
 /* line 40, ../sass/partials/_layout.scss */
@@ -208,7 +208,7 @@ html {
 #logo {
   position: absolute;
   left: 0;
-  bottom: 35px;
+  bottom: 30px;
   width: 160px;
   height: 37px;
   display: block;
@@ -271,45 +271,67 @@ html {
 /* line 127, ../sass/partials/_layout.scss */
 .siteTopper {
   width: 100%;
-  height: 400px;
 }
 
-/* line 132, ../sass/partials/_layout.scss */
-.backgroundCouple {
-  position: absolute;
-  height: 560px;
-  width: 100%;
-  top: 20px;
+/* line 131, ../sass/partials/_layout.scss */
+.couplePicture {
+  margin-top: 40px;
   left: 0;
+  position: absolute;
+  overflow: auto;
+  background: none;
+  display: block;
+  width: 100%;
+  height: 400px;
+  z-index: 2;
+}
+
+/* line 143, ../sass/partials/_layout.scss */
+.backgroundCouple {
+  height: 460px;
+  width: 100%;
   display: block;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  bottom: 0;
   background-image: url("images/coupleChillin.jpg");
-  transform: translate(0px, 110px);
+  transform: translate(0px, -110px);
 }
 
-/* line 142, ../sass/partials/_layout.scss */
-.bookingBlock {
+/* line 150, ../sass/partials/_layout.scss */
+.bookingBars {
   width: 100%;
+}
+
+/* line 154, ../sass/partials/_layout.scss */
+.bookingBlock {
+  width: 60%;
+  margin: 0 auto;
   display: block;
-  position: absolute;
   z-index: 2;
 }
 
-/* line 149, ../sass/partials/_layout.scss */
+/* line 161, ../sass/partials/_layout.scss */
+.navBlocksTopper {
+  display: block;
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 35px;
+}
+
+/* line 170, ../sass/partials/_layout.scss */
 .bookingContent {
   width: 100%;
   margin: 0 auto;
   display: block;
 }
 
-/* line 163, ../sass/partials/_layout.scss */
+/* line 182, ../sass/partials/_layout.scss */
 .navTabs {
   display: inline-block;
   vertical-align: top;
-  width: 19.5%;
+  width: 19.35%;
   border: solid #e1dfda;
   border-top-width: medium;
   border-right-width: medium;
@@ -319,7 +341,7 @@ html {
   position: relative;
 }
 
-/* line 174, ../sass/partials/_layout.scss */
+/* line 193, ../sass/partials/_layout.scss */
 .navLinks {
   width: 150px;
   display: block;
@@ -328,7 +350,7 @@ html {
   color: #FFFFFF;
   background-color: #333333;
 }
-/* line 181, ../sass/partials/_layout.scss */
+/* line 200, ../sass/partials/_layout.scss */
 .navLinks::after {
   position: absolute;
   right: 0;
@@ -340,7 +362,7 @@ html {
   height: 20px;
 }
 
-/* line 193, ../sass/partials/_layout.scss */
+/* line 212, ../sass/partials/_layout.scss */
 #rentalCar::after {
   position: absolute;
   content: "";
@@ -351,7 +373,7 @@ html {
   height: 20px;
 }
 
-/* line 204, ../sass/partials/_layout.scss */
+/* line 223, ../sass/partials/_layout.scss */
 #hotel::after {
   position: absolute;
   content: "";
@@ -362,7 +384,7 @@ html {
   height: 20px;
 }
 
-/* line 215, ../sass/partials/_layout.scss */
+/* line 234, ../sass/partials/_layout.scss */
 #bookings::after {
   position: absolute;
   content: "";
@@ -373,7 +395,7 @@ html {
   height: 20px;
 }
 
-/* line 226, ../sass/partials/_layout.scss */
+/* line 245, ../sass/partials/_layout.scss */
 #checkIn::after {
   position: absolute;
   content: "";
@@ -382,4 +404,25 @@ html {
   background-position: -89px -351px;
   width: 25px;
   height: 20px;
+}
+
+/* line 256, ../sass/partials/_layout.scss */
+.bookingInputs {
+  position: absolute;
+  display: block;
+  width: 60%;
+  background-color: #333333;
+  z-index: 4;
+}
+
+/* line 264, ../sass/partials/_layout.scss */
+#toInput {
+  display: inline-block;
+  width: 30%;
+}
+
+/* line 268, ../sass/partials/_layout.scss */
+#fromInput {
+  display: inline-block;
+  width: 30%;
 }
