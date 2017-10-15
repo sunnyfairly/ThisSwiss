@@ -327,8 +327,9 @@ html {
   display: block;
 }
 
-/* line 182, ../sass/partials/_layout.scss */
+/* line 180, ../sass/partials/_layout.scss */
 .navTabs {
+  font-weight: bold;
   display: inline-block;
   vertical-align: top;
   width: 19.35%;
@@ -341,7 +342,7 @@ html {
   position: relative;
 }
 
-/* line 193, ../sass/partials/_layout.scss */
+/* line 191, ../sass/partials/_layout.scss */
 .navLinks {
   width: 150px;
   display: block;
@@ -350,7 +351,7 @@ html {
   color: #FFFFFF;
   background-color: #333333;
 }
-/* line 200, ../sass/partials/_layout.scss */
+/* line 198, ../sass/partials/_layout.scss */
 .navLinks::after {
   position: absolute;
   right: 0;
@@ -362,7 +363,7 @@ html {
   height: 20px;
 }
 
-/* line 212, ../sass/partials/_layout.scss */
+/* line 210, ../sass/partials/_layout.scss */
 #rentalCar::after {
   position: absolute;
   content: "";
@@ -373,7 +374,7 @@ html {
   height: 20px;
 }
 
-/* line 223, ../sass/partials/_layout.scss */
+/* line 221, ../sass/partials/_layout.scss */
 #hotel::after {
   position: absolute;
   content: "";
@@ -384,7 +385,7 @@ html {
   height: 20px;
 }
 
-/* line 234, ../sass/partials/_layout.scss */
+/* line 232, ../sass/partials/_layout.scss */
 #bookings::after {
   position: absolute;
   content: "";
@@ -395,7 +396,7 @@ html {
   height: 20px;
 }
 
-/* line 245, ../sass/partials/_layout.scss */
+/* line 243, ../sass/partials/_layout.scss */
 #checkIn::after {
   position: absolute;
   content: "";
@@ -406,28 +407,53 @@ html {
   height: 20px;
 }
 
-/* line 256, ../sass/partials/_layout.scss */
+/* line 254, ../sass/partials/_layout.scss */
 .bookingInputs {
+  margin-top: 0;
   position: absolute;
   display: block;
   width: 60%;
-  line-height: 1.5;
+  line-height: 2.5;
   border: 1px solid #333333;
   background-color: #333333;
   z-index: 4;
+  font-weight: bold;
 }
 
-/* line 266, ../sass/partials/_layout.scss */
-#toInput {
+/* line 265, ../sass/partials/_layout.scss */
+#fromInput {
   display: inline-block;
-  width: 30%;
+  width: 40%;
 }
-/* line 269, ../sass/partials/_layout.scss */
-#toInput input {
+/* line 268, ../sass/partials/_layout.scss */
+#fromInput input {
+  padding-left: 10px;
+  width: 80%;
   border-radius: 0%;
 }
 
-/* line 273, ../sass/partials/_layout.scss */
+/* line 274, ../sass/partials/_layout.scss */
+#fromBox {
+  padding-left: 10px;
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 282, ../sass/partials/_layout.scss */
+#toInput {
+  display: inline-block;
+  width: 40%;
+}
+/* line 285, ../sass/partials/_layout.scss */
+#toInput input {
+  width: 80%;
+  padding-left: 10px;
+  border-radius: 0%;
+}
+
+/* line 291, ../sass/partials/_layout.scss */
 #toBox {
   display: inline-block;
   width: 40px;
@@ -435,20 +461,15 @@ html {
   color: #FFFFFF;
 }
 
-/* line 280, ../sass/partials/_layout.scss */
-#fromInput {
-  display: inline-block;
-  width: 30%;
-}
-/* line 283, ../sass/partials/_layout.scss */
-#fromInput input {
-  border-radius: 0%;
-}
-
-/* line 287, ../sass/partials/_layout.scss */
-#fromBox {
-  display: inline-block;
-  width: 40px;
+/* line 297, ../sass/partials/_layout.scss */
+#goButton {
+  display: block;
+  float: right;
   text-align: center;
+  width: 10%;
+}
+/* line 302, ../sass/partials/_layout.scss */
+#goButton a {
   color: #FFFFFF;
+  text-decoration: none;
 }
