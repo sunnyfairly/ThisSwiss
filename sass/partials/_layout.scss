@@ -174,7 +174,7 @@ html {
 }
 
 .bookingNav {
-	
+
 }
 
 
@@ -257,6 +257,8 @@ html {
 	position: absolute;
 	display: block;
 	width: 60%;
+	line-height: 1.5;
+	border: 1px solid $DarkGrey;
 	background-color: $DarkGrey;
 	z-index: 4;
 }
@@ -264,8 +266,27 @@ html {
 #toInput {
 	display: inline-block;
 	width: 30%;
-} 
+	input {
+		border-radius: 0%;
+	}
+}
+#toBox {
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+	color: $Snow;
+}
+ 
 #fromInput {
 	display: inline-block;
 	width: 30%;
+	input {
+		border-radius: 0%;
+	}
+}
+#fromBox {
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+	color: $Snow;
 }
