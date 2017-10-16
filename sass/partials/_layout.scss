@@ -294,7 +294,7 @@ body {
 	margin-top: 40px;
 	left: 0;
 	position: absolute;
-	overflow: hidden;
+	overflow: auto;
 	background: none;
 	display: block;
 	width: 100%;
@@ -305,8 +305,6 @@ body {
 .backgroundCouple {
 	height: 460px;
 	width: 100%;
-	height: 100%;
-	overflow-y: scroll;
 	display: block;
 	@include backgroundCouple;
 }

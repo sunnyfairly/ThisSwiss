@@ -25,7 +25,8 @@
 /*Couple chillin*/
 @mixin backgroundCouple {
 	background-size: cover;
-	background-position: top center;
+	background-attachment: fixed;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url("images/coupleChillin.jpg");
 	transform: translate(0px, 0px);
