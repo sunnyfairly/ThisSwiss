@@ -9,6 +9,9 @@ html {
 	font-size: 14px;
 }
 
+body {
+	position: relative;
+}
 
 .wholeSite {
 	width: 60%;
@@ -128,26 +131,12 @@ html {
 	width: 100%;
 }
 
-.couplePicture {
-	margin-top: 40px;
-	left: 0;
-	position: absolute;
-	overflow: auto;
-	background: none;
-	display: block;
-	width: 100%;
-	height: 400px;
-	z-index: 2;
-}
-
-.backgroundCouple {
-	height: 460px;
-	width: 100%;
-	display: block;
-	@include backgroundCouple;
-}
 
 .bookingBars {
+	position: absolute;
+	left: 0;
+	display: block;
+	z-index: 3;
 	width: 100%;
 }
 
@@ -155,17 +144,12 @@ html {
 	width: 60%;
 	margin: 0 auto;
 	display: block;
+	background-color: $DarkGrey;
+	background-size: cover;
+	border: 3px solid $DarkGrey;
 	z-index: 2;
 }
 
-.navBlocksTopper {
-	display: block;
-	position: absolute;
-	background-color: $Snow;
-	width: 100%;
-	height: 35px;
-
-}
 
 .bookingContent {
 	width: 100%;
@@ -184,6 +168,7 @@ html {
 	width: 19.35%;
 	@include navTabsBorder;
 	border-width: 1px 1px 0 0;
+	border-color: $DarkGrey;
 	position: relative;
 }
 
@@ -252,14 +237,12 @@ html {
 }
 
 .bookingInputs {
-	margin-top: 0;
-	position: absolute;
 	display: block;
-	width: 60%;
+	width: 100%;
 	line-height: 2.5;
 	border: 1px solid $DarkGrey;
 	background-color: $DarkGrey;
-	z-index: 4;
+	background-size: cover;
 	font-weight: bold;
 }
 #fromInput {
@@ -299,9 +282,31 @@ html {
 	float: right;
 	text-align: center;
 	width: 10%;
+	font-size: 16px;
 	a {
 		color: $Snow;
 		text-decoration: none;
 	}
 }
  
+/*Picture of couple by the beach*/
+.couplePicture {
+	margin-top: 40px;
+	left: 0;
+	position: absolute;
+	overflow: hidden;
+	background: none;
+	display: block;
+	width: 100%;
+	height: 360px;
+	z-index: 2;
+}
+
+.backgroundCouple {
+	height: 460px;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	display: block;
+	@include backgroundCouple;
+}

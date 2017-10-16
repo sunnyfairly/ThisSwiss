@@ -108,7 +108,12 @@ html {
   font-size: 14px;
 }
 
-/* line 13, ../sass/partials/_layout.scss */
+/* line 12, ../sass/partials/_layout.scss */
+body {
+  position: relative;
+}
+
+/* line 16, ../sass/partials/_layout.scss */
 .wholeSite {
   width: 60%;
   margin: 0 auto;
@@ -117,7 +122,7 @@ html {
   line-height: 1.5;
 }
 
-/* line 20, ../sass/partials/_layout.scss */
+/* line 23, ../sass/partials/_layout.scss */
 .site-header {
   position: relative;
   display: block;
@@ -126,13 +131,13 @@ html {
 }
 
 /*Logo and Main Nav Buttons*/
-/* line 29, ../sass/partials/_layout.scss */
+/* line 32, ../sass/partials/_layout.scss */
 .navbarHolder {
   width: 100%;
   height: 5em;
 }
 
-/* line 34, ../sass/partials/_layout.scss */
+/* line 37, ../sass/partials/_layout.scss */
 .navbar {
   font-size: .75em;
   text-transform: uppercase;
@@ -143,7 +148,7 @@ html {
   right: -7%;
   width: 60%;
 }
-/* line 40, ../sass/partials/_layout.scss */
+/* line 43, ../sass/partials/_layout.scss */
 .navbar li {
   text-align: right;
   line-height: 1.5em;
@@ -151,21 +156,21 @@ html {
   display: inline-block;
   margin-left: .35em;
 }
-/* line 46, ../sass/partials/_layout.scss */
+/* line 49, ../sass/partials/_layout.scss */
 .navbar li a {
   color: #7C736C;
   margin-right: 5px;
   position: relative;
 }
-/* line 50, ../sass/partials/_layout.scss */
+/* line 53, ../sass/partials/_layout.scss */
 .navbar li a:hover {
   color: #be1902;
 }
-/* line 55, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 .navbar .withArrow {
   padding-right: 10px;
 }
-/* line 58, ../sass/partials/_layout.scss */
+/* line 61, ../sass/partials/_layout.scss */
 .navbar .withArrow::after {
   content: "";
   position: absolute;
@@ -174,27 +179,27 @@ html {
   width: 10px;
   height: 10px;
 }
-/* line 66, ../sass/partials/_layout.scss */
+/* line 69, ../sass/partials/_layout.scss */
 .navbar :first-child {
   margin-left: 2em;
   width: 30%;
   text-decoration: none;
 }
-/* line 71, ../sass/partials/_layout.scss */
+/* line 74, ../sass/partials/_layout.scss */
 .navbar #language {
   width: 12.5%;
 }
-/* line 74, ../sass/partials/_layout.scss */
+/* line 77, ../sass/partials/_layout.scss */
 .navbar #milesMore {
   width: 20%;
 }
-/* line 77, ../sass/partials/_layout.scss */
+/* line 80, ../sass/partials/_layout.scss */
 .navbar #search {
   width: 12%;
   padding-right: 15px;
   margin-right: 0;
 }
-/* line 82, ../sass/partials/_layout.scss */
+/* line 85, ../sass/partials/_layout.scss */
 .navbar #search::after {
   content: "";
   position: absolute;
@@ -204,7 +209,7 @@ html {
   height: 15px;
 }
 
-/* line 92, ../sass/partials/_layout.scss */
+/* line 95, ../sass/partials/_layout.scss */
 #logo {
   position: absolute;
   left: 0;
@@ -218,14 +223,14 @@ html {
   background-size: 160px 37px;
 }
 
-/* line 99, ../sass/partials/_layout.scss */
+/* line 102, ../sass/partials/_layout.scss */
 #mainNavBar {
   float: left;
   width: 65%;
   padding-left: 150px;
 }
 
-/* line 105, ../sass/partials/_layout.scss */
+/* line 108, ../sass/partials/_layout.scss */
 #mainNavBar a {
   font-family: "CH-Sans-Regular", "CH-Sans", Arial, sans-serif;
   font-weight: 300em;
@@ -244,7 +249,7 @@ html {
   color: #be1902;
 }
 
-/* line 114, ../sass/partials/_layout.scss */
+/* line 117, ../sass/partials/_layout.scss */
 #login {
   display: block;
   float: right;
@@ -263,71 +268,44 @@ html {
   color: #be1902;
 }
 
-/* line 123, ../sass/partials/_layout.scss */
+/* line 126, ../sass/partials/_layout.scss */
 .mainSiteWrapper {
   width: 100%;
 }
 
-/* line 127, ../sass/partials/_layout.scss */
+/* line 130, ../sass/partials/_layout.scss */
 .siteTopper {
   width: 100%;
 }
 
-/* line 131, ../sass/partials/_layout.scss */
-.couplePicture {
-  margin-top: 40px;
-  left: 0;
+/* line 135, ../sass/partials/_layout.scss */
+.bookingBars {
   position: absolute;
-  overflow: auto;
-  background: none;
+  left: 0;
   display: block;
+  z-index: 3;
   width: 100%;
-  height: 400px;
-  z-index: 2;
 }
 
 /* line 143, ../sass/partials/_layout.scss */
-.backgroundCouple {
-  height: 460px;
-  width: 100%;
-  display: block;
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-image: url("images/coupleChillin.jpg");
-  transform: translate(0px, -110px);
-}
-
-/* line 150, ../sass/partials/_layout.scss */
-.bookingBars {
-  width: 100%;
-}
-
-/* line 154, ../sass/partials/_layout.scss */
 .bookingBlock {
   width: 60%;
   margin: 0 auto;
   display: block;
+  background-color: #333333;
+  background-size: cover;
+  border: 3px solid #333333;
   z-index: 2;
 }
 
-/* line 161, ../sass/partials/_layout.scss */
-.navBlocksTopper {
-  display: block;
-  position: absolute;
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 35px;
-}
-
-/* line 170, ../sass/partials/_layout.scss */
+/* line 154, ../sass/partials/_layout.scss */
 .bookingContent {
   width: 100%;
   margin: 0 auto;
   display: block;
 }
 
-/* line 180, ../sass/partials/_layout.scss */
+/* line 164, ../sass/partials/_layout.scss */
 .navTabs {
   font-weight: bold;
   display: inline-block;
@@ -339,10 +317,11 @@ html {
   border-bottom-width: medium;
   border-left-width: medium;
   border-width: 1px 1px 0 0;
+  border-color: #333333;
   position: relative;
 }
 
-/* line 191, ../sass/partials/_layout.scss */
+/* line 176, ../sass/partials/_layout.scss */
 .navLinks {
   width: 150px;
   display: block;
@@ -351,7 +330,7 @@ html {
   color: #FFFFFF;
   background-color: #333333;
 }
-/* line 198, ../sass/partials/_layout.scss */
+/* line 183, ../sass/partials/_layout.scss */
 .navLinks::after {
   position: absolute;
   right: 0;
@@ -363,7 +342,7 @@ html {
   height: 20px;
 }
 
-/* line 210, ../sass/partials/_layout.scss */
+/* line 195, ../sass/partials/_layout.scss */
 #rentalCar::after {
   position: absolute;
   content: "";
@@ -374,7 +353,7 @@ html {
   height: 20px;
 }
 
-/* line 221, ../sass/partials/_layout.scss */
+/* line 206, ../sass/partials/_layout.scss */
 #hotel::after {
   position: absolute;
   content: "";
@@ -385,7 +364,7 @@ html {
   height: 20px;
 }
 
-/* line 232, ../sass/partials/_layout.scss */
+/* line 217, ../sass/partials/_layout.scss */
 #bookings::after {
   position: absolute;
   content: "";
@@ -396,7 +375,7 @@ html {
   height: 20px;
 }
 
-/* line 243, ../sass/partials/_layout.scss */
+/* line 228, ../sass/partials/_layout.scss */
 #checkIn::after {
   position: absolute;
   content: "";
@@ -407,32 +386,30 @@ html {
   height: 20px;
 }
 
-/* line 254, ../sass/partials/_layout.scss */
+/* line 239, ../sass/partials/_layout.scss */
 .bookingInputs {
-  margin-top: 0;
-  position: absolute;
   display: block;
-  width: 60%;
+  width: 100%;
   line-height: 2.5;
   border: 1px solid #333333;
   background-color: #333333;
-  z-index: 4;
+  background-size: cover;
   font-weight: bold;
 }
 
-/* line 265, ../sass/partials/_layout.scss */
+/* line 248, ../sass/partials/_layout.scss */
 #fromInput {
   display: inline-block;
   width: 40%;
 }
-/* line 268, ../sass/partials/_layout.scss */
+/* line 251, ../sass/partials/_layout.scss */
 #fromInput input {
   padding-left: 10px;
   width: 80%;
   border-radius: 0%;
 }
 
-/* line 274, ../sass/partials/_layout.scss */
+/* line 257, ../sass/partials/_layout.scss */
 #fromBox {
   padding-left: 10px;
   display: inline-block;
@@ -441,19 +418,19 @@ html {
   color: #FFFFFF;
 }
 
-/* line 282, ../sass/partials/_layout.scss */
+/* line 265, ../sass/partials/_layout.scss */
 #toInput {
   display: inline-block;
   width: 40%;
 }
-/* line 285, ../sass/partials/_layout.scss */
+/* line 268, ../sass/partials/_layout.scss */
 #toInput input {
   width: 80%;
   padding-left: 10px;
   border-radius: 0%;
 }
 
-/* line 291, ../sass/partials/_layout.scss */
+/* line 274, ../sass/partials/_layout.scss */
 #toBox {
   display: inline-block;
   width: 40px;
@@ -461,15 +438,44 @@ html {
   color: #FFFFFF;
 }
 
-/* line 297, ../sass/partials/_layout.scss */
+/* line 280, ../sass/partials/_layout.scss */
 #goButton {
   display: block;
   float: right;
   text-align: center;
   width: 10%;
+  font-size: 16px;
 }
-/* line 302, ../sass/partials/_layout.scss */
+/* line 286, ../sass/partials/_layout.scss */
 #goButton a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+/*Picture of couple by the beach*/
+/* line 293, ../sass/partials/_layout.scss */
+.couplePicture {
+  margin-top: 40px;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  background: none;
+  display: block;
+  width: 100%;
+  height: 360px;
+  z-index: 2;
+}
+
+/* line 305, ../sass/partials/_layout.scss */
+.backgroundCouple {
+  height: 460px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: block;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url("images/coupleChillin.jpg");
+  transform: translate(0px, 0px);
 }
