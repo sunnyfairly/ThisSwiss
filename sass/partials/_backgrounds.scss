@@ -24,13 +24,46 @@
 
 /*Couple chillin*/
 @mixin backgroundCouple {
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url("images/coupleChillin.jpg");
+	background-attachment: scroll;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url("images/coupleChillin.jpg");
+	background-size: cover;
 	transform: translate(0px, 0px);
 }
 
 
+/*Articles*/
+@mixin fiveStars {
+	background-image: url("images/airplane4.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 126px 25px;	
+}
 
+
+/*Airplanes*/
+@mixin airplane1 {
+	background-image: url("images/airplane1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 650px 425px;
+}
+@mixin airplane2 {
+	background-image: url("images/airplane2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 500px 325px;
+}
+@mixin airplane3 {
+	background-image: url("images/airplane3.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 500px 325px;
+}
+@mixin airplane4 {
+	background-image: url("images/airplane4.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 650px 425px;
+}

@@ -78,6 +78,7 @@ Collection of all variable lists
 /*Lists all font-families by relationship to the page*/
 /*Universal Fonts*/
 /*Specific/Unique Fonts*/
+/*Article Fonts*/
 /*Collection of all partials, and structural css*/
 /*Defines borders by relationship to the page*/
 /*Universal Borders*/
@@ -86,6 +87,8 @@ Collection of all variable lists
 /*Universal Backgrounds*/
 /*Specific/Unique backgrounds*/
 /*Couple chillin*/
+/*Articles*/
+/*Airplanes*/
 /*Font setups organized by mixins*/
 /*Universal Fonts*/
 /*Navbar Fonts*/
@@ -276,9 +279,10 @@ body {
 /* line 130, ../sass/partials/_layout.scss */
 .siteTopper {
   width: 100%;
+  min-height: 400px;
 }
 
-/* line 135, ../sass/partials/_layout.scss */
+/* line 136, ../sass/partials/_layout.scss */
 .bookingBars {
   position: absolute;
   left: 0;
@@ -287,7 +291,7 @@ body {
   width: 100%;
 }
 
-/* line 143, ../sass/partials/_layout.scss */
+/* line 144, ../sass/partials/_layout.scss */
 .bookingBlock {
   width: 60%;
   margin: 0 auto;
@@ -298,14 +302,14 @@ body {
   z-index: 2;
 }
 
-/* line 154, ../sass/partials/_layout.scss */
+/* line 155, ../sass/partials/_layout.scss */
 .bookingContent {
   width: 100%;
   margin: 0 auto;
   display: block;
 }
 
-/* line 164, ../sass/partials/_layout.scss */
+/* line 165, ../sass/partials/_layout.scss */
 .navTabs {
   font-weight: bold;
   display: inline-block;
@@ -321,7 +325,7 @@ body {
   position: relative;
 }
 
-/* line 176, ../sass/partials/_layout.scss */
+/* line 177, ../sass/partials/_layout.scss */
 .navLinks {
   width: 150px;
   display: block;
@@ -330,7 +334,7 @@ body {
   color: #FFFFFF;
   background-color: #333333;
 }
-/* line 183, ../sass/partials/_layout.scss */
+/* line 184, ../sass/partials/_layout.scss */
 .navLinks::after {
   position: absolute;
   right: 0;
@@ -342,7 +346,7 @@ body {
   height: 20px;
 }
 
-/* line 195, ../sass/partials/_layout.scss */
+/* line 196, ../sass/partials/_layout.scss */
 #rentalCar::after {
   position: absolute;
   content: "";
@@ -353,7 +357,7 @@ body {
   height: 20px;
 }
 
-/* line 206, ../sass/partials/_layout.scss */
+/* line 207, ../sass/partials/_layout.scss */
 #hotel::after {
   position: absolute;
   content: "";
@@ -364,7 +368,7 @@ body {
   height: 20px;
 }
 
-/* line 217, ../sass/partials/_layout.scss */
+/* line 218, ../sass/partials/_layout.scss */
 #bookings::after {
   position: absolute;
   content: "";
@@ -375,7 +379,7 @@ body {
   height: 20px;
 }
 
-/* line 228, ../sass/partials/_layout.scss */
+/* line 229, ../sass/partials/_layout.scss */
 #checkIn::after {
   position: absolute;
   content: "";
@@ -386,7 +390,7 @@ body {
   height: 20px;
 }
 
-/* line 239, ../sass/partials/_layout.scss */
+/* line 240, ../sass/partials/_layout.scss */
 .bookingInputs {
   display: block;
   width: 100%;
@@ -397,19 +401,19 @@ body {
   font-weight: bold;
 }
 
-/* line 248, ../sass/partials/_layout.scss */
+/* line 249, ../sass/partials/_layout.scss */
 #fromInput {
   display: inline-block;
   width: 40%;
 }
-/* line 251, ../sass/partials/_layout.scss */
+/* line 252, ../sass/partials/_layout.scss */
 #fromInput input {
   padding-left: 10px;
   width: 80%;
   border-radius: 0%;
 }
 
-/* line 257, ../sass/partials/_layout.scss */
+/* line 258, ../sass/partials/_layout.scss */
 #fromBox {
   padding-left: 10px;
   display: inline-block;
@@ -418,19 +422,19 @@ body {
   color: #FFFFFF;
 }
 
-/* line 265, ../sass/partials/_layout.scss */
+/* line 266, ../sass/partials/_layout.scss */
 #toInput {
   display: inline-block;
   width: 40%;
 }
-/* line 268, ../sass/partials/_layout.scss */
+/* line 269, ../sass/partials/_layout.scss */
 #toInput input {
   width: 80%;
   padding-left: 10px;
   border-radius: 0%;
 }
 
-/* line 274, ../sass/partials/_layout.scss */
+/* line 275, ../sass/partials/_layout.scss */
 #toBox {
   display: inline-block;
   width: 40px;
@@ -438,7 +442,7 @@ body {
   color: #FFFFFF;
 }
 
-/* line 280, ../sass/partials/_layout.scss */
+/* line 281, ../sass/partials/_layout.scss */
 #goButton {
   display: block;
   float: right;
@@ -446,14 +450,14 @@ body {
   width: 10%;
   font-size: 16px;
 }
-/* line 286, ../sass/partials/_layout.scss */
+/* line 287, ../sass/partials/_layout.scss */
 #goButton a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
 /*Picture of couple by the beach*/
-/* line 293, ../sass/partials/_layout.scss */
+/* line 295, ../sass/partials/_layout.scss */
 .couplePicture {
   margin-top: 40px;
   left: 0;
@@ -466,15 +470,163 @@ body {
   z-index: 2;
 }
 
-/* line 305, ../sass/partials/_layout.scss */
+/* line 307, ../sass/partials/_layout.scss */
+.justFly {
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  font-size: 3rem;
+  text-shadow: 2px 2px #FFFFFF;
+  color: #CC0000;
+}
+
+/* line 315, ../sass/partials/_layout.scss */
+.anywhere {
+  position: absolute;
+  top: 350px;
+  left: 350px;
+  font-size: 3rem;
+  text-shadow: 2px 2px #FFFFFF;
+  color: #CC0000;
+}
+
+/* line 325, ../sass/partials/_layout.scss */
 .backgroundCouple {
   height: 460px;
   width: 100%;
   display: block;
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: url("images/coupleChillin.jpg");
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("images/coupleChillin.jpg");
+  background-size: cover;
   transform: translate(0px, 0px);
+}
+
+/*Middle of Site*/
+/* line 333, ../sass/partials/_layout.scss */
+.siteMiddle {
+  width: 100%;
+  min-height: 300px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+/* line 341, ../sass/partials/_layout.scss */
+.article-wrapper {
+  display: block;
+  width: 100%;
+}
+
+/* line 346, ../sass/partials/_layout.scss */
+#bestOf {
+  padding: 5px;
+}
+/* line 348, ../sass/partials/_layout.scss */
+#bestOf h1 {
+  text-decoration: underline;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+/* line 353, ../sass/partials/_layout.scss */
+#bestOf p {
+  font-size: 1.5rem;
+}
+/* line 355, ../sass/partials/_layout.scss */
+#bestOf p::after {
+  display: block;
+  width: 126px;
+  height: 25px;
+  background-image: url("images/airplane4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 126px 25px;
+}
+
+/* line 364, ../sass/partials/_layout.scss */
+.articles {
+  padding: 10px;
+  padding-bottom: 2px;
+  font-family: "Geneva", Tahoma, Verdana, Sans-serif;
+}
+
+/* line 371, ../sass/partials/_layout.scss */
+.articleAuthor {
+  padding-left: 25px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*This section describes the Airplane pictures*/
+/* line 380, ../sass/partials/_layout.scss */
+.airplane-wrapper1 {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  display: block;
+}
+
+/* line 387, ../sass/partials/_layout.scss */
+.airplane-wrapper2 {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+/* line 394, ../sass/partials/_layout.scss */
+.airplanePicsBig, .airplane1, .airplane4 {
+  position: absolute;
+  display: block;
+  margin-top: 15px;
+  left: -200px;
+  width: 650px;
+  height: 425px;
+}
+
+/* line 403, ../sass/partials/_layout.scss */
+.airplanePicsLittle, .airplane2, .airplane3 {
+  position: absolute;
+  display: block;
+  margin-top: 65px;
+  right: -150px;
+  width: 500px;
+  height: 325px;
+}
+
+/*Airplane pics*/
+/* line 413, ../sass/partials/_layout.scss */
+.airplane1 {
+  background-image: url("images/airplane1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 650px 425px;
+}
+
+/* line 417, ../sass/partials/_layout.scss */
+.airplane2 {
+  background-image: url("images/airplane2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 325px;
+}
+
+/* line 422, ../sass/partials/_layout.scss */
+.airplane3 {
+  right: 0px;
+  left: -150px;
+  background-image: url("images/airplane3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 325px;
+}
+
+/* line 429, ../sass/partials/_layout.scss */
+.airplane4 {
+  left: 500px;
+  background-image: url("images/airplane4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 650px 425px;
 }

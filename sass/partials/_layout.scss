@@ -129,6 +129,7 @@ body {
 
 .siteTopper {
 	width: 100%;
+	min-height: 400px;
 }
 
 
@@ -289,6 +290,7 @@ body {
 	}
 }
  
+
 /*Picture of couple by the beach*/
 .couplePicture {
 	margin-top: 40px;
@@ -302,9 +304,130 @@ body {
 	z-index: 2;
 }
 
+.justFly {
+	position: absolute;
+	top: 300px;
+	left: 350px;
+	font-size: 3rem;
+	text-shadow: 2px 2px $Snow;
+	color: $IconRed;
+}
+.anywhere {
+	position: absolute;
+	top: 350px;
+	left: 350px;
+	font-size: 3rem;
+	text-shadow: 2px 2px $Snow;
+	color: $IconRed;
+}
+
+
 .backgroundCouple {
 	height: 460px;
 	width: 100%;
 	display: block;
 	@include backgroundCouple;
+}
+
+/*Middle of Site*/
+.siteMiddle {
+	width: 100%;
+	min-height: 300px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+.article-wrapper {
+	display: block;
+	width: 100%;
+}
+
+#bestOf {
+	padding: 5px;
+	h1 {
+		text-decoration: underline;
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	p {
+		font-size: 1.5rem;
+		&::after {
+			display: block;
+			width: 126px;
+			height: 25px;
+			@include fiveStars;
+		}
+	}
+}
+
+.articles {
+	padding: 10px;
+	padding-bottom: 2px;
+	font-family: $article-p;
+}
+
+
+.articleAuthor {
+	padding-left: 25px;
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+/*This section describes the Airplane pictures*/
+.airplane-wrapper1 {
+	width: 100%;
+	height: 500px;
+	margin-top: 50px;
+	display: block;
+}
+
+.airplane-wrapper2 {
+	width: 100%;
+	height: 500px;
+	display: block;
+}
+
+
+.airplanePicsBig {
+	position: absolute;
+	display: block;
+	margin-top: 15px;
+	left: -200px;
+	width: 650px;
+	height: 425px;
+}
+
+.airplanePicsLittle {
+	position: absolute;
+	display: block;
+	margin-top: 65px;
+	right: -150px;
+	width: 500px;
+	height: 325px;
+}
+
+/*Airplane pics*/
+.airplane1 {
+	@extend .airplanePicsBig;
+	@include airplane1;
+}
+.airplane2 {
+	@extend .airplanePicsLittle;
+	@include airplane2;
+
+}
+.airplane3 {
+	@extend .airplanePicsLittle;
+	right: 0px;
+	left: -150px;
+	@include airplane3;
+
+}
+.airplane4 {
+	@extend .airplanePicsBig;
+	left: 500px;
+	@include airplane4;
 }
