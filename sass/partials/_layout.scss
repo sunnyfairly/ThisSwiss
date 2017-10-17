@@ -311,14 +311,24 @@ body {
 	font-size: 3rem;
 	text-shadow: 2px 2px $Snow;
 	color: $IconRed;
+	&::after {
+		position: absolute;
+		content: "";
+		margin-left: 10px;
+		top: 25px;
+		background-image: url("images/sprites.png");
+		background-position: -292px -232px;
+		width: 15px;
+		height: 15px;
+	}
 }
 .anywhere {
 	position: absolute;
 	top: 350px;
 	left: 350px;
 	font-size: 3rem;
-	text-shadow: 2px 2px $Snow;
-	color: $IconRed;
+	text-shadow: 2px 2px $IconRed;
+	color: $Snow;
 }
 
 
