@@ -187,7 +187,7 @@ body {
 		content: "";
 		margin-left: 60px;
 		background-image: url("images/sprites.png");
-		background-position: -322px -105px;
+		background-position: -147px -270px;
 		width: 25px;
 		height: 20px;
 	}
@@ -195,10 +195,11 @@ body {
 #rentalCar {
 	&::after {
 		position: absolute;
-		content: "";
+		display: block;
+		top: 10;
 		margin-left: 60px;
 		background-image: url("images/sprites.png");
-		background-position: -285px -210px;
+		background-position: -314px -220px;
 		width: 25px;
 		height: 20px;
 	}
@@ -206,10 +207,11 @@ body {
 #hotel {
 	&::after {
 		position: absolute;
-		content: "";
+		display: block;
+		top: 10;
 		margin-left: 60px;
 		background-image: url("images/sprites.png");
-		background-position: -264px -263px;
+		background-position: -294px -273px;
 		width: 25px;
 		height: 20px;
 	}
@@ -217,10 +219,11 @@ body {
 #bookings {
 	&::after {
 		position: absolute;
-		content: "";
+		display: block;
+		top: 10;
 		margin-left: 60px;
 		background-image: url("images/sprites.png");
-		background-position: -90px -96px;
+		background-position: -120px -106px;
 		width: 25px;
 		height: 20px;
 	}
@@ -228,10 +231,11 @@ body {
 #checkIn {
 	&::after {
 		position: absolute;
-		content: "";
+		display: block;
+		top: 10;
 		margin-left: 60px;
 		background-image: url("images/sprites.png");
-		background-position: -89px -351px;
+		background-position: -119px -361px;
 		width: 25px;
 		height: 20px;
 	}
@@ -307,17 +311,21 @@ body {
 .justFly {
 	position: absolute;
 	top: 300px;
-	left: 350px;
+	left: 40px;
 	font-size: 3rem;
 	text-shadow: 2px 2px $Snow;
 	color: $IconRed;
 	&::after {
 		position: absolute;
-		content: "";
+		display: block;
+		content:"";
 		margin-left: 10px;
+		margin-top: 5px;
 		top: 25px;
+		left: 260px;
 		background-image: url("images/sprites.png");
-		background-position: -292px -232px;
+		background-position: -50px -80px;
+		transform: scaleY(-1);
 		width: 15px;
 		height: 15px;
 	}
@@ -325,7 +333,7 @@ body {
 .anywhere {
 	position: absolute;
 	top: 350px;
-	left: 350px;
+	left: 80px;
 	font-size: 3rem;
 	text-shadow: 2px 2px $IconRed;
 	color: $Snow;
@@ -349,6 +357,7 @@ body {
 }
 
 .article-wrapper {
+	border-bottom: 5px double $DarkGrey;
 	display: block;
 	width: 100%;
 }
@@ -362,12 +371,7 @@ body {
 	}
 	p {
 		font-size: 1.5rem;
-		&::after {
-			display: block;
-			width: 126px;
-			height: 25px;
-			@include fiveStars;
-		}
+		
 	}
 }
 
@@ -383,6 +387,17 @@ body {
 	font-size: 1rem;
 	font-style: italic;
 	font-weight: bold;
+	text-align: center;
+	&::before {
+			display: inline-block;
+			content: "";
+			width: 126px;
+			height: 15px;
+			margin-right: 10px;
+			margin-bottom: -10px;
+			padding-top: 15px;
+			@include fiveStars;
+		}
 }
 
 
@@ -393,13 +408,6 @@ body {
 	margin-top: 50px;
 	display: block;
 }
-
-.airplane-wrapper2 {
-	width: 100%;
-	height: 500px;
-	display: block;
-}
-
 
 .airplanePicsBig {
 	position: absolute;
@@ -419,6 +427,29 @@ body {
 	height: 325px;
 }
 
+.airplane-wrapper2 {
+	width: 100%;
+	height: 500px;
+	display: block;
+}
+
+.airplanePicsBig2 {
+	position: absolute;
+	display: block;
+	margin-top: 15px;
+	right: -200;
+	width: 650px;
+	height: 425px;
+}
+
+.airplanePicsLittle2 {
+	position: absolute;
+	display: block;
+	margin-top: 65px;
+	left: -150;
+	width: 500px;
+	height: 325px;
+}
 /*Airplane pics*/
 .airplane1 {
 	@extend .airplanePicsBig;
@@ -430,14 +461,44 @@ body {
 
 }
 .airplane3 {
-	@extend .airplanePicsLittle;
-	right: 0px;
-	left: -150px;
+	@extend .airplanePicsLittle2;
 	@include airplane3;
 
 }
 .airplane4 {
-	@extend .airplanePicsBig;
-	left: 500px;
+	@extend .airplanePicsBig2;
 	@include airplane4;
+}
+
+
+
+/*Footer*/
+.footer {
+	width: 60%;
+	min-height: 75px;
+	margin: 0 auto;
+	background-color: $DarkGrey;
+	color: $Snow;
+}
+
+#footerBox {
+	ul {
+		display: inline-block;
+	}
+}
+.footerList {
+	width: 33%;
+	min-height: 15px;
+	text-align: center;
+	li {
+		padding: 2.5px;
+		&:hover {
+			background-color: $Snow;
+			color: $DarkGrey;
+		}	
+	}
+	:first-child {
+		padding-top: 3px;
+	}
+
 }
